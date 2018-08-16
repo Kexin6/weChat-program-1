@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/userLogin/login",
+    "pages/userRegist/regist",
+    "pages/chooseBgm/bgm",
+    "pages/mine/mine"
+  
+  ],
+
+    "window": {
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#fff",
+      "navigationBarTitleText": "一只小视频",
+      "navigationBarTextStyle": "black"
+    },
+    "debug": true
+}

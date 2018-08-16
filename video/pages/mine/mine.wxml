@@ -1,0 +1,27 @@
+<view>
+
+  <view class='userCard'>
+
+    <block wx:if="{{isMe}}">
+      <image src="{{faceUrl}}" class="face" bindtap='changeFace'></image>
+    </block>
+    <block wx:if="{{!isMe}}">
+      <image src="{{faceUrl}}" class="face"></image>
+    </block>
+    <label class='nickname'>{{nickname}}</label>
+
+ <!--少了followme这些东西哦-->
+      <button size='mini' class='primary' bindtap='uploadVideoEvent'> 点击分享生活</button>
+      <button size='mini' type='' class='logout' bindtap='logout'>退出登录</button>
+
+
+    <view class='container-row'>
+      <label class='info-items'>{{followCounts}} 关注</label>
+      <label class='info-items'>{{fansCounts}} 粉丝</label>
+      <label class='info-items'>{{receiveLikeCounts}} 赞</label>
+    </view>
+  </view>
+
+</view>
+
+<view class="line"></view>
