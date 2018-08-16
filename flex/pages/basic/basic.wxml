@@ -1,0 +1,34 @@
+<icon type="success" size="66" color="blue"></icon>
+<icon type="success_no_circle" size="66" ></icon>
+<icon type="info" size="66" ></icon>
+<icon type="warn" size="66" ></icon>
+<icon type="waiting" size="66" ></icon>
+<icon type="cancel" size="66" ></icon>
+<icon type="download" size="66" ></icon>
+<icon type="search" size="66" ></icon>
+<icon type="clear" size="66" ></icon>
+<!--success, success_no_circle, info, warn, waiting, cancel, download, search, clear-->
+
+<view class="group">
+  <block wx:for="{{iconType}}">
+    <icon type="{{item}}" size="28"/>
+  </block>
+</view>
+
+<view>
+  <text selectable="true">This is the content of text</text>
+</view>  
+<view>
+   <text space='{{true}}'>space       space    content</text>
+</view>
+<view>
+   <text space='{{true}}' decode="true">&nbsp; &lt; &gt; &amp; &apos; &ensp; &emsp;</text>
+</view>
+
+<!--string-->
+<rich-text nodes="{{mycontent}}"></rich-text>
+<!--array-->
+<rich-text nodes="{{mycontent2}}"></rich-text>
+
+<progress percent ="{{myPercent}}" show-info="true" stroke-width="20" activeColor='green' backgroundColor='lightgrey' active="true" active-mode="forwards"></progress>
+<button bindtap="addPercent">addPercent</button>

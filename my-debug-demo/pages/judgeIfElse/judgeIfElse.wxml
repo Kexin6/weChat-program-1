@@ -1,0 +1,16 @@
+<view class = 'container'>
+<view wx:if="{{age < 18}}"> under age</view>
+<view wx:elif="{{age >= 18 && age <= 30}}"> teenager</view>
+<view wx:else> others</view>
+
+
+<block wx:if= "{{true}}">
+<view>这是一个块级元素</view>
+<view>if判断学习</view>
+</block>
+<view hidden= "{{true}}">
+<view>这是一个hidden元素</view>
+<view>if判断学习</view>
+</view>
+
+</view>

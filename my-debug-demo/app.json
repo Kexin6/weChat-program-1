@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/pageInclude/pageInclude",
+    "pages/wxs/wxs",
+    "pages/temps/temps",
+    "pages/judgeIfElse/judgeIfElse",
+    "pages/wxkey/wxkey",
+    "pages/listFor/listFor",
+    "pages/dataBind/dataBind",
+    "pages/test/test",
+    "pages/index/index",
+    "pages/another/anothertest"
+    
+    
+  ],
+  
+  "window": {
+    "navigationBarBackgroundColor": "#000000",      "navigationBarTextStyle": "white",
+     "navigationBarTitleText": "Cassie's first demo",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+   },
+   
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
+
+  
+

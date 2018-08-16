@@ -1,0 +1,2 @@
+<view>This is page 3</view>
+<navigator open-type='navigateBack'>return</navigator>

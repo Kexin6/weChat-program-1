@@ -1,0 +1,3 @@
+<slider min="10" max="90" show-value="true" active-color="green" background-color="darkgrey" block-size="28" block-color="green" bindchanging='changing' bindchange = "change"></slider>
+
+<view style="background-color:green;width:100%;height:{{myheight}};"></view>

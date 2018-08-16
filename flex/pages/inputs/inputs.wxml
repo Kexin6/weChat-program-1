@@ -1,0 +1,10 @@
+
+<input value="Study how to program" maxlength="30" cursor-spacing='0' confirm-type='next' confirm-hold='true' bindinput='inputEvent' bindfocus='focusEvent' bindblur='blurEvent' bindconfirm='confirmEvent'></input>
+<input value="number" type="number" focus='true' cursor='3' selection-start='2' selection-end='4'></input>
+<input value="IDcard" type="idcard" adjust-postion="true"></input>
+<input value="Digit" type="digit"></input>
+Placeholder：<input value="" placeholder="UserID" placeholder-style='color:green;'></input>
+Placeholder：<input value="" placeholder="UserID" placeholder-class="placeholder"></input>
+<!--placeholder-class:在wxss中定义一个class来改style-->
+密码框：<input value="" password="true"></input>
+密码框：<input value="" password="true"></input>

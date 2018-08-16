@@ -1,0 +1,34 @@
+<form bindsubmit='submit'>
+
+
+用户名：<input value="" placeholder="{{placeholder}}" confirm-type="next" bindconfirm="{{confirmEvent}}"></input>
+
+密码框：<input value="" password="true" placeholder="Please input your password" bindconfirm="confirmEvent2"></input>
+
+<view>请选择技能: </view>
+<checkbox-group bindchange="{{checkboxchange}}">
+<view wx:for="{{arr}}">
+    <checkbox value='{{item.value}}' >{{item.name}}</checkbox>
+  </view>
+</checkbox-group>
+
+<view>生日：</view>
+<picker mode='date' start="2000-01-10" end="2100-01-10" bindchange='datechange' bindcancel='datecancel'>{{dateshow}}</picker>
+
+<view>住址：</view>
+<picker mode='region' bindchange='regionchange' bindcancel='regioncancel'>{{regionshow}}</picker>
+
+<radio-group value="{{sexValue}}" bindchange="{{sex}}">
+<radio>男</radio>
+<radio>女</radio>
+</radio-group>
+
+<view>请选择年龄:</view>
+<slider min='0' max='100' show-value='true' value="{{age}}" bindchange='{{agechange}}'></slider>
+
+<switch>资料保密</switch>
+
+<textarea placeholder='{{text}}' bindconfirm='textconfirm'></textarea>
+<button form-type='submit' type="default">Submit</button>
+<button form-type='reset' type="warn">Reset</button>
+</form>

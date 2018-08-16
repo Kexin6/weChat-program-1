@@ -1,0 +1,50 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  /*默认从左到右排序*/
+  /*flex-wrap: nowrap; 超过长度会平均分配*/
+ /* flex-wrap:nowrap;*/
+ white-space: nowrap;
+  /*默认左对齐flex-start*/
+  /*center用的比较多*/
+  justify-content:flex-start;
+}
+
+.size{
+  /*width: 150rpx;
+  height: 150rpx;
+  //This is a square*/
+  width: 250rpx;
+  height: 350rpx;
+  display:inline-block;
+}
+
+.a{
+  background-color: red;
+  order: 1;
+  flex: 3;
+}
+
+.b{
+  background-color: yellow;
+  order: 2;
+  flex: 2;
+}
+
+.c{
+  background-color: blue;
+  order: 4;
+  flex: 1;
+}
+
+.d{
+  background-color: green;
+  order: 5;
+  flex: 1;
+}
+
+.e{
+  background-color: orange;
+  order: 3;
+  flex: 1;
+}

@@ -1,0 +1,37 @@
+<view style='color: red'>单列selector</view>
+
+<picker mode="selector" range="{{array}}">
+Please choose me.
+</picker>
+
+<picker mode="selector" range="{{arrayObj}}" range-key='name' bindchange='changeme' bindcancel='cancelme'>
+<!--range-key:若range为object，这个现实的是object的制定属性-->
+<view>{{showme}}</view>
+</picker>
+
+<picker mode="selector" range="{{subObj}}" range-key='subject' bindchange='dochange' bindcancel='docancel'>
+<!--range-key:若range为object，这个现实的是object的制定属性-->
+<view>{{show}}</view>
+</picker>
+
+<view style= 'margin-top: 100rpx; color: red'>multi-selector</view>
+
+<picker mode="multiSelector" range="{{arrayMulti}}">
+Please choose me.
+</picker>
+
+<picker mode="multiSelector" range="{{arrayObjMulti}}" range-key='name' bindchange='changemeMulti' bindcolumnchange='coloumchange'>
+<!--range-key:若range为object，这个现实的是object的制定属性-->
+<view>{{showme}}</view>
+</picker>
+
+<view style='margin-top:100rpx; color:red'>时间选择器</view>
+<picker mode="time" start="00:00" end="23:59" bindchange='timechange' bindcancel='timecancel'>{{timeshow}}</picker>
+
+
+<view style='margin-top:100rpx; color:red'>日期选择器</view>
+<picker mode='date' start="2000-01-10" end="2100-01-10" bindchange='datechange' bindcancel='datecancel'>{{dateshow}}</picker>
+
+
+<view style='margin-top:100rpx; color:red'>省市区选择器</view>
+<picker mode='region' bindchange='regionchange' bindcancel='regioncancel'>{{regionshow}}</picker>

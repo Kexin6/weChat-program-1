@@ -1,0 +1,10 @@
+<movable-area class="father-size">
+
+<!--damping越大越好拉，friction越大inertia越小-->
+<!--disabled:true的话禁用滑块-->
+  <movable-view class="e size" direction="all" inertia="true" out-of-bounds="true" x="50" y="100" damping="50" friction="100" bindchange="doChange" scale="true" bindscale="doScale">
+
+  </movable-view>
+
+</movable-area>
+

@@ -1,0 +1,16 @@
+<radio-group>
+
+<radio checked='{{false}}' color = 'red'>China</radio>
+<radio checked='{{false}}'>America</radio>
+<radio checked='{{false}}'>Russia</radio>
+
+</radio-group>
+
+<radio-group bindchange="changeme">
+  <block wx:for="{{arr}}">
+    <radio checked='{{false}}' value='{{item.name}}'>{{item.value}}</radio>
+  </block>
+
+</radio-group>
+
+<button> {{myvalue}}</button>

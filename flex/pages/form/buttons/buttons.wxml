@@ -1,0 +1,5 @@
+<button>Button</button>
+<button size ="mini" type="default">Button</button>
+<button size ="mini" type="primary">Button</button>
+<button size ="mini" type="warn" plain="true">Button</button>
+<button size ="mini" type="warn" plain="true" disabled="true" loading="true">Button</button>

@@ -1,0 +1,30 @@
+<checkbox-group>
+  <checkbox value='v中国'/>中国
+  <checkbox value='v美国' disabled='true'/>美国
+  <checkbox value='v俄国' checked='true' color='red'/>俄国
+</checkbox-group>
+
+<checkbox-group>
+  <view wx:for="{{arr}}">
+    <checkbox value='{{item.name}}' checked='{{item.checked}}' color='{{item.color}}' disabled="{{item.disabled}}"/>{{item.value}}
+  </view>
+</checkbox-group>
+
+<checkbox-group>
+  <view wx:for="{{arr}}">
+    <checkbox value='{{item.name}}' checked='{{item.checked}}' color='{{item.color}}' disabled="{{item.disabled}}">{{item.value}}</checkbox>
+  </view>
+</checkbox-group>
+
+<checkbox-group>
+  <label wx:for="{{arr}}">
+    <checkbox value='{{item.name}}' checked='{{item.checked}}' color='{{item.color}}' disabled="{{item.disabled}}"/>{{item.value}}
+  </label>
+</checkbox-group>
+
+<checkbox-group>
+  <label wx:for="{{arr}}">
+    <checkbox id="{{item.id}}" value='{{item.name}}' checked='{{item.checked}}' color='{{item.color}}' disabled="{{item.disabled}}"/>{{item.value}}
+  </label>
+</checkbox-group>
+<label for='1001'>测试点击</label>

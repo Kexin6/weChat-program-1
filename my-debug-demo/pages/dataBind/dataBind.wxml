@@ -1,0 +1,10 @@
+<view class = 'container' id = "myid - {{testid}}">
+{{msg}}
+<checkbox checked="{{true}}"> </checkbox>
+<checkbox checked="{{false}}"> </checkbox>
+<checkbox checked="{{flag}}"> </checkbox>
+<checkbox checked="{{unflag}}"> </checkbox>
+{{a + b == 3? 'yes, it is 3':'No, it is not 3'}}<br/>
+{{a + b}} + {{c}}
+<view>{{"hello" + hello + a + b}}</view>
+</view>
